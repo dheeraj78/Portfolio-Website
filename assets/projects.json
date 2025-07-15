@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Portfolio Website",
+    "img": "../assets/images/website screenshot.png",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "desc": "A sleek, responsive portfolio showcasing my development skills and design thinking.",
+    "live": "https://jupudi.dev",
+    "repo": "https://github.com/jupudi/portfolio"
+  }
+
+]
