@@ -1,31 +1,31 @@
 [
   {
-    "src": "../assets/svg/responsive.svg",
+    "src": "./assets/svg/responsive.svg",
     "heading": "Responsive Design",
     "para": "Crafting fluid layouts that adapt gracefully across devices."
   },
   {
-    "src": "../assets/images/mobileapproach.png",
+    "src": "./assets/images/mobileapproach.png",
     "heading": "Mobile-First Approach",
     "para": "Designing with mobile users in mind to ensure optimal UX across viewports."
   },
   {
-    "src": "../assets/svg/python.svg",
+    "src": "./assets/svg/python.svg",
     "heading": "Python (Intermediate)",
     "para": "Writing clean logic and automations with a focus on scalability and readability."
   },
   {
-    "src": "../assets/svg/java.svg",
+    "src": "./assets/svg/java.svg",
     "heading": "Java (Beginner)",
     "para": "Exploring object-oriented programming and core Java fundamentals."
   },
   {
-    "src": "../assets/svg/htmlcssjs.svg",
+    "src": "./assets/svg/htmlcssjs.svg",
     "heading": "HTML, CSS & JavaScript",
     "para": "Building structured layouts, stylish components, and interactive behaviors."
   },
   {
-    "src": "../assets/svg/figma.svg",
+    "src": "./assets/svg/figma.svg",
     "heading": "Figma Prototyping",
     "para": "Designing UI flows and refining layouts with precision and creativity."
   }
