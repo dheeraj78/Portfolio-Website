@@ -97,7 +97,7 @@ function createCard(obj) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../assets/skills.json")
+    fetch("./assets/skills.json")
         .then(res => res.json()) // Parses JSON from raw response
         .then(data => {
             data.forEach(skill => {
@@ -158,7 +158,7 @@ function createProjectCard(obj) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../assets/projects.json").then(res => res.json()).then(data => {
+    fetch("./assets/projects.json").then(res => res.json()).then(data => {
         data.forEach((project) => {
             const work = createProjectCard(project);
             document.getElementById("projects").appendChild(work);
