@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 </head>
 
 <body class="bg-teal-50 font-poppins">
-    <header class="py-4 border-b border-teal-600 backdrop-blur overflow-x-clip">
+    <header class="py-4 border-b border-teal-600 backdrop-blur fixed top-0 right-0 left-0 z-30 shadow-md">
         <nav class="px-4 flex justify-between items-center md:px-16">
             <div id="logo"><a href="#" class="text-3xl font-bold ">JDev</a></div>
             <ul
@@ -25,9 +26,10 @@
                     Resume
                     <img src="../assets/svg/file-download-line.svg" alt="document download icon"
                         class="w-4 h-4 object-contain" /></a>
-                <button id="cta"
-                    class="cursor-pointer bg-indigo-600 px-4 py-1.5 text-white border border-stone-300 rounded-lg hover:bg-indigo-400 active:bg-indigo-600/20 ">Hire
-                    me</button>
+                <a id="cta"
+                    class="cursor-pointer bg-indigo-600 px-4 py-1.5 text-white border border-stone-300 rounded-lg hover:bg-indigo-400 active:bg-indigo-600/20 "
+                    href="#contact">Hire
+                    me</a>
             </div>
 
             <div id="menu-bar" class="cursor-pointer md:hidden">
@@ -53,13 +55,13 @@
             </button>
         </div>
         <ul class="">
-            <li class="border-b border-stone-300 leading-6 active:bg-stone-200"><a href="#"
+            <li class="border-b border-stone-300 leading-6 active:bg-stone-200"><a href="#herosection"
                     class="inline-block w-full py-2">Home</a></li>
-            <li class="border-b border-stone-300 leading-6 active:bg-stone-200"><a href="#"
+            <li class="border-b border-stone-300 leading-6 active:bg-stone-200"><a href="#about"
                     class="inline-block w-full py-2 ">About</a></li>
-            <li class="border-b border-stone-300 leading-6 active:bg-stone-200"><a href="#"
+            <li class="border-b border-stone-300 leading-6 active:bg-stone-200"><a href="#skills"
                     class="inline-block w-full py-2 ">Skills</a></li>
-            <li class="border-b border-stone-300 leading-6 active:bg-stone-200"><a href="#"
+            <li class="border-b border-stone-300 leading-6 active:bg-stone-200"><a href="#project"
                     class="inline-block w-full py-2 ">Projects</a></li>
             <li class="flex flex-col gap-4 mt-6">
                 <a id="resumedownloadbtn" download href="../assets/resume dheeraj.pdf"
@@ -67,16 +69,16 @@
                     <img src="../assets/svg/file-download-line.svg" alt="document download icon"
                         class="w-4 h-4 object-contain" />
                 </a>
-                <button id="cta"
-                    class="cursor-pointer bg-indigo-600 px-4 py-1.5 text-white border-stone-300 rounded-lg hover:bg-indigo-400 active:bg-indigo-600/20">
+                <a id="cta"
+                    class="cursor-pointer bg-indigo-600 px-4 py-1.5 text-white border border-stone-300 rounded-lg hover:bg-indigo-400 active:bg-indigo-600/20" href="#contact">
                     Hire me
-                </button>
-            </li>   
+                </a>
+            </li>
         </ul>
 
     </aside>
 
-    <main class="">
+    <main class="mt-20">
         <!-- hero section -->
         <section id="herosection"
             class="px-4 py-8 flex flex-col gap-4 lg:flex-row lg:justify-around lg:items-center lg:h-[calc(100vh - 70px)] lg:py-20">
@@ -176,7 +178,7 @@
 
         </section>
 
-        <section id="project" class="bg-transparent px-4 py-8 flex flex-col gap-4 lg:px-34 lg:gap-8">
+        <section id="project" class="bg-neutral-100 px-4 py-8 flex flex-col gap-4 lg:px-34 lg:gap-8">
             <h2 id="heading"
                 class="flex items-center text-3xl font-bold justify-center py-2 mb-5 md:text-3xl lg:text-4xl">
                 <img src="../assets/svg/dash.svg" alt="">
@@ -193,7 +195,7 @@
 
         <section id="contact" class="bg-white px-4 py-12">
             <h2 class="text-3xl font-bold text-center mb-6">Let's Connect</h2>
-            <form class="max-w-xl mx-auto flex flex-col gap-4">
+            <form class="max-w-xl mx-auto flex flex-col gap-4" action="https://formsubmit.co/5f1074cfc523dbfa94c007a19f2c53a5" method="POST" />
                 <input type="text" placeholder="Your Name" class="p-3 border rounded-md" />
                 <input type="email" placeholder="Your Email" class="p-3 border rounded-md" />
                 <textarea placeholder="Your Message" class="p-3 border rounded-md h-32 resize-none"></textarea>
@@ -207,8 +209,7 @@
     <footer class="px-4 bg-slate-800 py-6 text-center text-sm text-gray-400">
         <p>&copy; 2025 Jupudi Dheeraj. Built with ❤️ using HTML, CSS & JavaScript.</p>
         <div class="flex justify-center gap-4 mt-3">
-            <a href="https://github.com/dheeraj78" target="_blank"
-                class="hover:text-white">GitHub</a>
+            <a href="https://github.com/dheeraj78" target="_blank" class="hover:text-white">GitHub</a>
             <a href="mailto:jupudi@example.com" class="hover:text-white">Email</a>
             <a href="#contact" class="hover:text-white">Hire Me</a>
         </div>
