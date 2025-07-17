@@ -26,3 +26,9 @@
   background-color: #6366f1; /* Tailwind's indigo-500 */
   border-radius: 4px;
 }
+
+@layer base {
+  section {
+    @apply scroll-mt-17;
+  }
+}
